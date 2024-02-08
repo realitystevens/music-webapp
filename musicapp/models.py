@@ -6,7 +6,7 @@ from django.utils.timezone import datetime
 class Artiste(models.Model):
     first_name = models.CharField(default="", max_length=255, blank=False, null=False)
     last_name = models.CharField(default="", max_length=255, blank=False, null=False)
-    age = models.IntegerField(blank=False, null=False, default="")
+    age = models.IntegerField(blank=False, null=False, default=00)
 
 
     class Meta:
